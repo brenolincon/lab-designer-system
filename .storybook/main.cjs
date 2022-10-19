@@ -11,7 +11,8 @@ module.exports = {
     builder: '@storybook/builder-vite'
   },
   features: {
-    storyStoreV7: true
+    storyStoreV7: true,
+    interactionsDebugger: true
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
@@ -21,5 +22,3 @@ module.exports = {
     return config
   }
 }
-
-// Aula parou 27 min
